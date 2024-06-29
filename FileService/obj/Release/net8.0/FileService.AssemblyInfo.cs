@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FileService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96956771ba85758977dc36fd053784fe994c5e1f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c98d780f607ed724a43a2a40065ba1567ccbf226")]
 [assembly: System.Reflection.AssemblyProductAttribute("FileService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FileService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

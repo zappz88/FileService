@@ -5,6 +5,8 @@ using FileService.Utility;
 
 Console.WriteLine("Executing FileService...");
 
+//Currently resolving commandline handling for future implementation. Hardcoded assignments currently used.
+
 CommandLineArgumentHandler commandLineArgumentHandler = new CommandLineArgumentHandler(Environment.GetCommandLineArgs());
 string targetRootPathParam = commandLineArgumentHandler.GetDestinationRootPath() ?? $@"C:\Users\arams\Desktop";
 FileOperationEnum fileOperationEnum = FileOperationEnum.Move;

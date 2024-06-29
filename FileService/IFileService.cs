@@ -4,7 +4,7 @@
 
     public enum FileOperationEnum { Copy, Move, Delete }
 
-    public enum FileServiceEnum { SirGawainPen }
+    public enum FileServiceEnum { Default }
 
     public interface IFileService
     {

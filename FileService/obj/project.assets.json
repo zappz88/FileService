@@ -83,11 +83,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\arams\\Desktop\\FileService\\FileService\\FileService.csproj",
+      "projectUniqueName": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\FileService.csproj",
       "projectName": "FileService",
-      "projectPath": "C:\\Users\\arams\\Desktop\\FileService\\FileService\\FileService.csproj",
+      "projectPath": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\FileService.csproj",
       "packagesPath": "C:\\Users\\arams\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\arams\\Desktop\\FileService\\FileService\\obj\\",
+      "outputPath": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

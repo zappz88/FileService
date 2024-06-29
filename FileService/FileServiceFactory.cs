@@ -1,4 +1,4 @@
-﻿using FileService.SirGawainPen;
+﻿using FileService;
 
 namespace FileService
 {
@@ -10,8 +10,8 @@ namespace FileService
 
             switch (fileServiceEnum) 
             {
-                case FileServiceEnum.SirGawainPen:
-                    fileService = new SirGawainPenFileService(sourcePath, targetPath);
+                case FileServiceEnum.Default:
+                    fileService = new FileService(sourcePath, targetPath);
                     break;
                 default:
                     throw new NotImplementedException();

@@ -1,14 +1,14 @@
-﻿namespace FileService.SirGawainPen
+﻿namespace FileService
 {
-    public class SirGawainPenFilePathResolver : IFilePathResolver
+    public class FilePathResolver : IFilePathResolver
     {
         public string SourcePath { get; private set; }
         public string TargetPath { get; private set; }
 
-        public SirGawainPenFilePathResolver(string sourcePath, string targetPath) 
-        { 
-            this.SourcePath = sourcePath;
-            this.TargetPath = targetPath;
+        public FilePathResolver(string sourcePath, string targetPath)
+        {
+            SourcePath = sourcePath;
+            TargetPath = targetPath;
         }
 
         public string GetSourceMediaFilePath(FileTypeEnum fileTypeEnum)
@@ -18,13 +18,13 @@
             switch (fileTypeEnum)
             {
                 case FileTypeEnum.Video:
-                    result = this.GetSourceVideoFilePath();
+                    result = GetSourceVideoFilePath();
                     break;
                 case FileTypeEnum.Audio:
-                    result = this.GetSourceAudioFilePath();
+                    result = GetSourceAudioFilePath();
                     break;
                 case FileTypeEnum.Photo:
-                    result = this.GetSourcePhotoFilePath();
+                    result = GetSourcePhotoFilePath();
                     break;
                 default:
                     throw new NotImplementedException();
@@ -36,22 +36,22 @@
         public string GetSourceMediaFilePath(string fileTypeEnumString)
         {
             FileTypeEnum fileTypeEnum = Enum.Parse<FileTypeEnum>(fileTypeEnumString);
-            return this.GetSourceMediaFilePath(fileTypeEnum);
+            return GetSourceMediaFilePath(fileTypeEnum);
         }
 
         public string GetSourceVideoFilePath()
         {
-            return Path.Combine(this.SourcePath, "VIDEO");
+            return Path.Combine(SourcePath, "VIDEO");
         }
 
         public string GetSourceAudioFilePath()
         {
-            return Path.Combine(this.SourcePath, "AUDIO");
+            return Path.Combine(SourcePath, "AUDIO");
         }
 
         public string GetSourcePhotoFilePath()
         {
-            return Path.Combine(this.SourcePath, "PHOTO");
+            return Path.Combine(SourcePath, "PHOTO");
         }
 
         public string GetTargetMediaFilePath(FileTypeEnum fileTypeEnum)
@@ -61,13 +61,13 @@
             switch (fileTypeEnum)
             {
                 case FileTypeEnum.Video:
-                    result = this.GetTargetVideoFilePath();
+                    result = GetTargetVideoFilePath();
                     break;
                 case FileTypeEnum.Audio:
-                    result = this.GetTargetAudioFilePath();
+                    result = GetTargetAudioFilePath();
                     break;
                 case FileTypeEnum.Photo:
-                    result = this.GetTargetPhotoFilePath();
+                    result = GetTargetPhotoFilePath();
                     break;
                 default:
                     throw new NotImplementedException();
@@ -79,27 +79,27 @@
         public string GetTargetMediaFilePath(string fileTypeEnumString)
         {
             FileTypeEnum fileTypeEnum = Enum.Parse<FileTypeEnum>(fileTypeEnumString);
-            return this.GetTargetMediaFilePath(fileTypeEnum);
+            return GetTargetMediaFilePath(fileTypeEnum);
         }
 
-        public string GetTargetVideoFilePath() 
+        public string GetTargetVideoFilePath()
         {
-            return Path.Combine(this.GetDefaultTargetDirectoryPath(), "VIDEO");
+            return Path.Combine(GetDefaultTargetDirectoryPath(), "VIDEO");
         }
 
         public string GetTargetAudioFilePath()
         {
-            return Path.Combine(this.GetDefaultTargetDirectoryPath(), "AUDIO");
+            return Path.Combine(GetDefaultTargetDirectoryPath(), "AUDIO");
         }
 
         public string GetTargetPhotoFilePath()
         {
-            return Path.Combine(this.GetDefaultTargetDirectoryPath(), "PHOTO");
+            return Path.Combine(GetDefaultTargetDirectoryPath(), "PHOTO");
         }
 
         private string GetDefaultTargetDirectoryPath()
         {
-            return Path.Combine(this.TargetPath, this.GetDefaultTargetDirectoryName(), this.GetSessionTargetDirectoryName());
+            return Path.Combine(TargetPath, GetDefaultTargetDirectoryName(), GetSessionTargetDirectoryName());
         }
 
         private string GetDefaultTargetDirectoryName()
