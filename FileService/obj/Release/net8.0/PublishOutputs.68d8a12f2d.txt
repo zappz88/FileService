@@ -1,0 +1,8 @@
+C:\Users\arams\Documents\GitHubRepos\FileService\FileService\bin\Release\net8.0\publish\FileService.exe
+C:\Users\arams\Documents\GitHubRepos\FileService\FileService\bin\Release\net8.0\publish\FileService.dll
+C:\Users\arams\Documents\GitHubRepos\FileService\FileService\bin\Release\net8.0\publish\FileService.deps.json
+C:\Users\arams\Documents\GitHubRepos\FileService\FileService\bin\Release\net8.0\publish\FileService.runtimeconfig.json
+C:\Users\arams\Documents\GitHubRepos\FileService\FileService\bin\Release\net8.0\publish\FileService.pdb
+C:\Users\arams\Documents\GitHubRepos\FileService\FileService\bin\Release\net8.0\publish\System.Diagnostics.EventLog.dll
+C:\Users\arams\Documents\GitHubRepos\FileService\FileService\bin\Release\net8.0\publish\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
+C:\Users\arams\Documents\GitHubRepos\FileService\FileService\bin\Release\net8.0\publish\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll

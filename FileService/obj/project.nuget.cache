@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "70TwfAg3E91UhHwG2PoORSFPAUeRErqyfhqcPHjHKBl+jtomMCBqsil97WgFPX0UWMVh83OV9PJs29H+uCb4SQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\arams\\Desktop\\FileService\\FileService\\FileService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\arams\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.0\\system.diagnostics.eventlog.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
