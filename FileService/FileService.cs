@@ -3,7 +3,7 @@
 
     public class FileService : IFileService
     {
-        private FilePathResolver sirGawainPenPathResolver;
+        private FilePathResolver filePathResolver;
 
         public FileService()
         {
@@ -12,22 +12,22 @@
 
         public FileService(string sourcePath, string targetPath)
         {
-            sirGawainPenPathResolver = new FilePathResolver(sourcePath, targetPath);
+            filePathResolver = new FilePathResolver(sourcePath, targetPath);
         }
 
         public string[] GetVideoFiles()
         {
-            return Directory.GetFiles(sirGawainPenPathResolver.GetSourceVideoFilePath());
+            return Directory.GetFiles(filePathResolver.GetSourceVideoFilePath());
         }
 
         public string[] GetAudioFiles()
         {
-            return Directory.GetFiles(sirGawainPenPathResolver.GetSourceAudioFilePath());
+            return Directory.GetFiles(filePathResolver.GetSourceAudioFilePath());
         }
 
         public string[] GetPhotoFiles()
         {
-            return Directory.GetFiles(sirGawainPenPathResolver.GetSourcePhotoFilePath());
+            return Directory.GetFiles(filePathResolver.GetSourcePhotoFilePath());
         }
 
         public string[] GetMediaFiles(FileTypeEnum fileTypeEnum)
@@ -61,9 +61,9 @@
             string[] mediaFiles = GetMediaFiles(fileTypeEnum);
             if (mediaFiles != null && mediaFiles.Length > 0)
             {
-                string destFullDirectoryPath = sirGawainPenPathResolver.GetTargetMediaFilePath(fileTypeEnum);
+                string destFullDirectoryPath = filePathResolver.GetTargetMediaFilePath(fileTypeEnum);
                 Directory.CreateDirectory(destFullDirectoryPath);
-                Console.WriteLine($@"Moving {mediaFiles.Length} files from '{sirGawainPenPathResolver.GetSourceMediaFilePath(fileTypeEnum)}' to {sirGawainPenPathResolver.GetTargetMediaFilePath(fileTypeEnum)}...");
+                Console.WriteLine($@"Moving {mediaFiles.Length} files from '{filePathResolver.GetSourceMediaFilePath(fileTypeEnum)}' to {filePathResolver.GetTargetMediaFilePath(fileTypeEnum)}...");
                 Parallel.ForEach(mediaFiles, mediaFile =>
                 {
                     FileInfo fileInfo = new FileInfo(mediaFile);
@@ -84,9 +84,9 @@
             string[] mediaFiles = GetMediaFiles(fileTypeEnum);
             if (mediaFiles != null && mediaFiles.Length > 0)
             {
-                string destFullDirectoryPath = sirGawainPenPathResolver.GetTargetMediaFilePath(fileTypeEnum);
+                string destFullDirectoryPath = filePathResolver.GetTargetMediaFilePath(fileTypeEnum);
                 Directory.CreateDirectory(destFullDirectoryPath);
-                Console.WriteLine($@"Copying {mediaFiles.Length} files from '{sirGawainPenPathResolver.GetSourceMediaFilePath(fileTypeEnum)}' to {sirGawainPenPathResolver.GetTargetMediaFilePath(fileTypeEnum)}...");
+                Console.WriteLine($@"Copying {mediaFiles.Length} files from '{filePathResolver.GetSourceMediaFilePath(fileTypeEnum)}' to {filePathResolver.GetTargetMediaFilePath(fileTypeEnum)}...");
                 Parallel.ForEach(mediaFiles, mediaFile =>
                 {
                     FileInfo fileInfo = new FileInfo(mediaFile);
@@ -107,7 +107,7 @@
             string[] mediaFiles = GetMediaFiles(fileTypeEnum);
             if (mediaFiles != null && mediaFiles.Length > 0)
             {
-                Console.WriteLine($@"Deleting {mediaFiles.Length} files from '{sirGawainPenPathResolver.GetSourceMediaFilePath(fileTypeEnum)}'...");
+                Console.WriteLine($@"Deleting {mediaFiles.Length} files from '{filePathResolver.GetSourceMediaFilePath(fileTypeEnum)}'...");
                 Parallel.ForEach(mediaFiles, mediaFile =>
                 {
                     FileInfo fileInfo = new FileInfo(mediaFile);
