@@ -67,9 +67,15 @@
                 Parallel.ForEach(mediaFiles, mediaFile =>
                 {
                     FileInfo fileInfo = new FileInfo(mediaFile);
+                    Console.WriteLine($@"Moving {fileInfo.Name}...");
                     File.Move(fileInfo.FullName, Path.Combine(destFullDirectoryPath, fileInfo.Name));
+                    Console.WriteLine($@"{fileInfo.Name} moved.");
                 });
                 Console.WriteLine($@"Moved files.");
+            }
+            else 
+            {
+                Console.WriteLine($@"{mediaFiles.Length} {fileTypeEnum} files found in '{filePathResolver.GetSourceMediaFilePath(fileTypeEnum)}'.");
             }
         }
 
@@ -90,9 +96,15 @@
                 Parallel.ForEach(mediaFiles, mediaFile =>
                 {
                     FileInfo fileInfo = new FileInfo(mediaFile);
+                    Console.WriteLine($@"Copying {fileInfo.Name}...");
                     File.Copy(fileInfo.FullName, Path.Combine(destFullDirectoryPath, fileInfo.Name));
+                    Console.WriteLine($@"{fileInfo.Name} copied.");
                 });
                 Console.WriteLine($@"Copied files.");
+            }
+            else
+            {
+                Console.WriteLine($@"{mediaFiles.Length} {fileTypeEnum} files found in '{filePathResolver.GetSourceMediaFilePath(fileTypeEnum)}'.");
             }
         }
 
@@ -111,9 +123,15 @@
                 Parallel.ForEach(mediaFiles, mediaFile =>
                 {
                     FileInfo fileInfo = new FileInfo(mediaFile);
+                    Console.WriteLine($@"Deleting {fileInfo.Name}...");
                     File.Delete(fileInfo.FullName);
+                    Console.WriteLine($@"{fileInfo.Name} deleted.");
                 });
                 Console.WriteLine($@"Deleted files.");
+            }
+            else
+            {
+                Console.WriteLine($@"{mediaFiles.Length} {fileTypeEnum} files found in '{filePathResolver.GetSourceMediaFilePath(fileTypeEnum)}'.");
             }
         }
 
