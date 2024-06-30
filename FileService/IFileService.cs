@@ -37,7 +37,7 @@
         void DeleteAllMediaFiles();
     }
 
-    public interface IFilePathResolver
+    public interface IFilePathProvider
     {
         string GetSourceMediaFilePath(FileTypeEnum fileTypeEnum);
 

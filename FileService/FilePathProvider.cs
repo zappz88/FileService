@@ -1,6 +1,6 @@
 ﻿namespace FileService
 {
-    public class FilePathProvider : IFilePathResolver
+    public class FilePathProvider : IFilePathProvider
     {
         #region Properties
         public string SourcePath { get; private set; }
