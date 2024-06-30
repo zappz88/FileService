@@ -22,13 +22,19 @@
 
         void CopyMediaFiles(string fileTypeEnumString);
 
+        void CopyAllMediaFiles();
+
         void MoveMediaFiles(FileTypeEnum fileTypeEnum);
 
         void MoveMediaFiles(string fileTypeEnumString);
 
+        void MoveAllMediaFiles();
+
         void DeleteMediaFiles(FileTypeEnum fileTypeEnum);
 
         void DeleteMediaFiles(string fileTypeEnumString);
+
+        void DeleteAllMediaFiles();
     }
 
     public interface IFilePathResolver

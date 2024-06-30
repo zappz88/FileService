@@ -20,23 +20,20 @@ foreach (DriveInfo removableDriveInfo in removableDriveInfos)
     foreach (FileServiceEnum fileServiceEnum in Enum.GetValues<FileServiceEnum>())
     {
         IFileService fileService = FileServiceFactory.GetFileService(fileServiceEnum, removableDriveInfo.Name, targetRootPathParam);
-        Parallel.ForEach(Enum.GetValues<FileTypeEnum>(), fileTypeEnum =>
-        {
-            switch (fileOperationEnum) 
-            { 
-                case FileOperationEnum.Copy:
-                    fileService.CopyMediaFiles(fileTypeEnum);
-                    break;
-                case FileOperationEnum.Move:
-                    fileService.MoveMediaFiles(fileTypeEnum);
-                    break;
-                case FileOperationEnum.Delete:
-                    fileService.DeleteMediaFiles(fileTypeEnum);
-                    break;
-                default:
-                    throw new NotImplementedException();
-            }
-        });
+        switch (fileOperationEnum) 
+        { 
+            case FileOperationEnum.Copy:
+                fileService.CopyAllMediaFiles();
+                break;
+            case FileOperationEnum.Move:
+                fileService.MoveAllMediaFiles();
+                break;
+            case FileOperationEnum.Delete:
+                fileService.DeleteAllMediaFiles();
+                break;
+            default:
+                throw new NotImplementedException();
+        }
     }
     Console.WriteLine($@"File operation complete.");
 }

@@ -1,16 +1,21 @@
 ﻿namespace FileService
 {
-    public class FilePathResolver : IFilePathResolver
+    public class FilePathProvider : IFilePathResolver
     {
+        #region Properties
         public string SourcePath { get; private set; }
         public string TargetPath { get; private set; }
+        #endregion
 
-        public FilePathResolver(string sourcePath, string targetPath)
+        #region Constructors
+        public FilePathProvider(string sourcePath, string targetPath)
         {
             SourcePath = sourcePath;
             TargetPath = targetPath;
         }
+        #endregion
 
+        #region Public Methods
         public string GetSourceMediaFilePath(FileTypeEnum fileTypeEnum)
         {
             string result = null;
@@ -97,6 +102,9 @@
             return Path.Combine(GetDefaultTargetDirectoryPath(), "PHOTO");
         }
 
+        #endregion
+
+        #region Private Methods
         private string GetDefaultTargetDirectoryPath()
         {
             return Path.Combine(TargetPath, GetDefaultTargetDirectoryName(), GetSessionTargetDirectoryName());
@@ -111,5 +119,6 @@
         {
             return $@"{DateTime.Now.ToShortDateString().Replace("/", "_")} {DateTime.Now.ToShortTimeString().Replace(":", "_")}";
         }
+        #endregion
     }
 }
