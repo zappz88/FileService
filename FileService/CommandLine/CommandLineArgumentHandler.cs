@@ -20,6 +20,7 @@ namespace FileService.CommandLine
 
         public CommandLineArgumentHandler(string[] args) : base(args)
         {
+
         }
 
         public string GetDestinationRoot()
@@ -34,7 +35,7 @@ namespace FileService.CommandLine
 
         public List<FileOperationEnum> GetFileOperations()
         {
-            List<string> commandParameters = GetCommandParameters(ActionCommandString);
+            List<string> commandParameters = GetCommandParameterList(ActionCommandString);
             if (commandParameters.Count > 0) 
             {
                 List<FileOperationEnum> fileOperationEnumsList = new List<FileOperationEnum>();
@@ -59,29 +60,45 @@ namespace FileService.CommandLine
             if (i >= 0)
             {
                 i++;
-                if (IsValidIndex(i) && CommandStringList.IndexOf(Args[i]) == -1) 
+                if (CommandStringList.IndexOf(Args[i]) >= 0) 
                 {
-                    return Args[i];
+                    throw new ArgumentException("Commandline parsing error.", command);
                 }
+                return Args[i];
             }
             return null;
         }
 
-        private List<string> GetCommandParameters(string command)
+        private string[] GetCommandParameterArray(string command)
         {
             int i = GetCommandIndex(command.ToLower());
-            if (i >= 0) 
+            if (i >= 0)
             {
                 i++;
-                List<string> parameters = new List<string>();
-                while (IsValidIndex(i) && CommandStringList.IndexOf(Args[i]) == -1)
+                int j = i;
+                while (IsValidIndex(j))
                 {
-                    parameters.Add(Args[i]);
-                    i++;
+                    if (CommandStringList.IndexOf(Args[j]) >= 0)
+                    {
+                        if (i == j)
+                        {
+                            throw new ArgumentException("Commandline parsing error.", command);
+                        }
+                        break;
+                    }
+                    else 
+                    {
+                        j++;
+                    }
                 };
-                return parameters;
+                return Args[i..j];
             }
             return null;
+        }
+
+        private List<string> GetCommandParameterList(string command)
+        {
+            return GetCommandParameterArray(command).ToList();
         }
     }
 }
