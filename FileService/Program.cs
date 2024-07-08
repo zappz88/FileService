@@ -5,37 +5,37 @@ using FileService.Utility;
 
 Console.WriteLine("Executing FileService...");
 
-//Currently resolving commandline handling for future implementation. Hardcoded assignments currently used.
-
 CommandLineArgumentHandler commandLineArgumentHandler = new CommandLineArgumentHandler(Environment.GetCommandLineArgs());
-string targetRootPathParam = commandLineArgumentHandler.GetDestinationRootPath() ?? $@"C:\Users\arams\Desktop";
-FileOperationEnum fileOperationEnum = FileOperationEnum.Move;
-string archiveOperation = commandLineArgumentHandler.GetArchiveOperation();
+string targetRootPathParam = commandLineArgumentHandler.GetDestinationRoot();
+List<FileOperationEnum> fileOperationEnums = commandLineArgumentHandler.GetFileOperations();
 
 DriveInfo[] removableDriveInfos = DriveInfoService.GetRemovableDrives();
 
 foreach (DriveInfo removableDriveInfo in removableDriveInfos) 
 {
-    Console.WriteLine($@"Executing file operation '{fileOperationEnum}' on '{removableDriveInfo.Name}'...");
-    foreach (FileServiceEnum fileServiceEnum in Enum.GetValues<FileServiceEnum>())
+    foreach (FileOperationEnum fileOperationEnum in fileOperationEnums)
     {
-        IFileService fileService = FileServiceFactory.GetFileService(fileServiceEnum, removableDriveInfo.Name, targetRootPathParam);
-        switch (fileOperationEnum) 
-        { 
-            case FileOperationEnum.Copy:
-                fileService.CopyAllMediaFiles();
-                break;
-            case FileOperationEnum.Move:
-                fileService.MoveAllMediaFiles();
-                break;
-            case FileOperationEnum.Delete:
-                fileService.DeleteAllMediaFiles();
-                break;
-            default:
-                throw new NotImplementedException();
+        Console.WriteLine($@"Executing file operation '{fileOperationEnum}' on '{removableDriveInfo.Name}'...");
+        foreach (FileServiceEnum fileServiceEnum in Enum.GetValues<FileServiceEnum>())
+        {
+            IFileService fileService = FileServiceFactory.GetFileService(fileServiceEnum, removableDriveInfo.Name, targetRootPathParam);
+            switch (fileOperationEnum)
+            {
+                case FileOperationEnum.Copy:
+                    fileService.CopyAllMediaFiles();
+                    break;
+                case FileOperationEnum.Move:
+                    fileService.MoveAllMediaFiles();
+                    break;
+                case FileOperationEnum.Delete:
+                    fileService.DeleteAllMediaFiles();
+                    break;
+                default:
+                    throw new NotImplementedException();
+            }
         }
+        Console.WriteLine($@"File operation complete.");
     }
-    Console.WriteLine($@"File operation complete.");
 }
 
 Console.WriteLine("FileService shutting down...");

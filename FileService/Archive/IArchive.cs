@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 
 namespace FileService.Archive
 {
-    public enum ArchiveOperationEnum { Default, None }
-
     public interface IArchive
     {
         void ArchiveDirectory(string directoryPath, string zipPath);

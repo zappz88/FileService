@@ -112,7 +112,7 @@
 
         private string GetDefaultTargetDirectoryName()
         {
-            return $@"SirGawainPen";
+            return $@"DefaultFileTransfer";
         }
 
         private string GetSessionTargetDirectoryName()

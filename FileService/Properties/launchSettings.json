@@ -2,7 +2,7 @@
   "profiles": {
     "FileService": {
       "commandName": "Project",
-      "commandLineArgs": "C:\\Users\\arams\\Desktop Move"
+      "commandLineArgs": "/c Move /d C:\\Users\\arams\\Desktop"
     }
   }
 }

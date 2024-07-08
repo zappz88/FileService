@@ -2,7 +2,7 @@
 {
     public enum FileTypeEnum { Video, Audio, Photo }
 
-    public enum FileOperationEnum { Copy, Move, Delete }
+    public enum FileOperationEnum { Copy, Move, Delete, Archive }
 
     public enum FileServiceEnum { Default }
 
