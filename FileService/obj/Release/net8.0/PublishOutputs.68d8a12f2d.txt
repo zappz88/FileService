@@ -6,3 +6,5 @@ C:\Users\arams\Documents\GitHubRepos\FileService\FileService\bin\Release\net8.0\
 C:\Users\arams\Documents\GitHubRepos\FileService\FileService\bin\Release\net8.0\publish\System.Diagnostics.EventLog.dll
 C:\Users\arams\Documents\GitHubRepos\FileService\FileService\bin\Release\net8.0\publish\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
 C:\Users\arams\Documents\GitHubRepos\FileService\FileService\bin\Release\net8.0\publish\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\arams\Documents\GitHubRepos\FileService\FileService\bin\Release\net8.0\publish\Common.dll
+C:\Users\arams\Documents\GitHubRepos\FileService\FileService\bin\Release\net8.0\publish\Common.pdb

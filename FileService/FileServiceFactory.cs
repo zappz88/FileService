@@ -1,4 +1,4 @@
-﻿using FileService;
+﻿using Common.EnumUtil;
 
 namespace FileService
 {
@@ -22,7 +22,7 @@ namespace FileService
 
         public static IFileService GetFileService(string fileServiceEnumString)
         {
-            FileServiceEnum fileServiceEnum = Enum.Parse<FileServiceEnum>(fileServiceEnumString);
+            FileServiceEnum fileServiceEnum = EnumHelper.TryParse<FileServiceEnum>(fileServiceEnumString);
             return GetFileService(fileServiceEnum);
         }
 

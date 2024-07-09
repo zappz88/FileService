@@ -27,6 +27,16 @@
             "rid": "win"
           }
         }
+      },
+      "Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.dll": {}
+        }
       }
     }
   },
@@ -69,10 +79,16 @@
         "system.diagnostics.eventlog.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Common/1.0.0": {
+      "type": "project",
+      "path": "../../../../source/repos/Common/Common/Common.csproj",
+      "msbuildProject": "../../../../source/repos/Common/Common/Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Common >= 1.0.0",
       "System.Diagnostics.EventLog >= 8.0.0"
     ]
   },
@@ -108,7 +124,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\arams\\source\\repos\\Common\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\arams\\source\\repos\\Common\\Common\\Common.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

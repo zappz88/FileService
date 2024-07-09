@@ -3,48 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|c:\\users\\arams\\documents\\githubrepos\\fileservice\\fileservice\\fileservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|solutionrelative:fileservice\\fileservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|c:\\users\\arams\\documents\\githubrepos\\fileservice\\fileservice\\archive\\archiveservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|solutionrelative:fileservice\\archive\\archiveservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|c:\\users\\arams\\documents\\githubrepos\\fileservice\\fileservice\\commandline\\commandlineargumenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|solutionrelative:fileservice\\commandline\\commandlineargumenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|c:\\users\\arams\\documents\\githubrepos\\fileservice\\fileservice\\fileservice.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|solutionrelative:fileservice\\fileservice.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{D02E6359-A8DA-49C9-B529-6B19EF06D21E}|..\\..\\..\\source\\repos\\Common\\Common\\Common.csproj|c:\\users\\arams\\source\\repos\\common\\common\\commandline\\commandlineargumenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|c:\\users\\arams\\documents\\githubrepos\\fileservice\\fileservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|solutionrelative:fileservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|c:\\users\\arams\\documents\\githubrepos\\fileservice\\fileservice\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|solutionrelative:fileservice\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|c:\\users\\arams\\documents\\githubrepos\\fileservice\\fileservice\\commandline\\commandlinehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|solutionrelative:fileservice\\commandline\\commandlinehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|c:\\users\\arams\\documents\\githubrepos\\fileservice\\fileservice\\commandline\\parameter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|solutionrelative:fileservice\\commandline\\parameter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D02E6359-A8DA-49C9-B529-6B19EF06D21E}|..\\..\\..\\source\\repos\\Common\\Common\\Common.csproj|c:\\users\\arams\\source\\repos\\common\\common\\commandline\\argumenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|c:\\users\\arams\\documents\\githubrepos\\fileservice\\fileservice\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|solutionrelative:fileservice\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|c:\\users\\arams\\documents\\githubrepos\\fileservice\\fileservice\\utility\\enumparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|solutionrelative:fileservice\\utility\\enumparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|c:\\users\\arams\\documents\\githubrepos\\fileservice\\fileservice\\fileservicefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|solutionrelative:fileservice\\fileservicefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|c:\\users\\arams\\documents\\githubrepos\\fileservice\\fileservice\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|solutionrelative:fileservice\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|c:\\users\\arams\\documents\\githubrepos\\fileservice\\fileservice\\filepathprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|solutionrelative:fileservice\\filepathprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|c:\\users\\arams\\documents\\githubrepos\\fileservice\\fileservice\\fileservicefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|solutionrelative:fileservice\\fileservicefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D02E6359-A8DA-49C9-B529-6B19EF06D21E}|..\\..\\..\\source\\repos\\Common\\Common\\Common.csproj|c:\\users\\arams\\source\\repos\\common\\common\\system\\driveinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|c:\\users\\arams\\documents\\githubrepos\\fileservice\\fileservice\\utility\\driveinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|solutionrelative:fileservice\\utility\\driveinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D02E6359-A8DA-49C9-B529-6B19EF06D21E}|..\\..\\..\\source\\repos\\Common\\Common\\Common.csproj|c:\\users\\arams\\source\\repos\\common\\common\\enumutil\\enumhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|c:\\users\\arams\\documents\\githubrepos\\fileservice\\fileservice\\commandline\\argumenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|solutionrelative:fileservice\\commandline\\argumenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|c:\\users\\arams\\documents\\githubrepos\\fileservice\\fileservice\\fileservice.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|solutionrelative:fileservice\\fileservice.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|c:\\users\\arams\\documents\\githubrepos\\fileservice\\fileservice\\archive\\iarchive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|solutionrelative:fileservice\\archive\\iarchive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|c:\\users\\arams\\documents\\githubrepos\\fileservice\\fileservice\\fileservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{890CF5F6-B27E-4FDD-B7B2-1D0C43984407}|FileService\\FileService.csproj|solutionrelative:fileservice\\fileservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,145 +66,189 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FileService",
-              "DocumentMoniker": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\FileService.csproj",
-              "RelativeDocumentMoniker": "FileService\\FileService.csproj",
-              "ToolTip": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\FileService.csproj",
-              "RelativeToolTip": "FileService\\FileService.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-08T06:09:20.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "EnumParser.cs",
-              "DocumentMoniker": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\Utility\\EnumParser.cs",
-              "RelativeDocumentMoniker": "FileService\\Utility\\EnumParser.cs",
-              "ToolTip": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\Utility\\EnumParser.cs",
-              "RelativeToolTip": "FileService\\Utility\\EnumParser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T04:20:26.354Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FileService",
-              "DocumentMoniker": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\FileService.csproj",
-              "RelativeDocumentMoniker": "FileService\\FileService.csproj",
-              "ToolTip": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\FileService.csproj",
-              "RelativeToolTip": "FileService\\FileService.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-08T00:45:54.304Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CommandLineArgumentHandler.cs",
-              "DocumentMoniker": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\CommandLine\\CommandLineArgumentHandler.cs",
-              "RelativeDocumentMoniker": "FileService\\CommandLine\\CommandLineArgumentHandler.cs",
-              "ToolTip": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\CommandLine\\CommandLineArgumentHandler.cs",
-              "RelativeToolTip": "FileService\\CommandLine\\CommandLineArgumentHandler.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAAAD0AAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T00:27:31.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ArgumentHandler.cs",
-              "DocumentMoniker": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\CommandLine\\ArgumentHandler.cs",
-              "RelativeDocumentMoniker": "FileService\\CommandLine\\ArgumentHandler.cs",
-              "ToolTip": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\CommandLine\\ArgumentHandler.cs",
-              "RelativeToolTip": "FileService\\CommandLine\\ArgumentHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T00:27:28.283Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FileServiceFactory.cs",
-              "DocumentMoniker": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\FileServiceFactory.cs",
-              "RelativeDocumentMoniker": "FileService\\FileServiceFactory.cs",
-              "ToolTip": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\FileServiceFactory.cs",
-              "RelativeToolTip": "FileService\\FileServiceFactory.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T21:59:14.984Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\Program.cs",
-              "RelativeDocumentMoniker": "FileService\\Program.cs",
-              "ToolTip": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\Program.cs",
-              "RelativeToolTip": "FileService\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T03:47:59.969Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DriveInfoService.cs",
-              "DocumentMoniker": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\Utility\\DriveInfoService.cs",
-              "RelativeDocumentMoniker": "FileService\\Utility\\DriveInfoService.cs",
-              "ToolTip": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\Utility\\DriveInfoService.cs",
-              "RelativeToolTip": "FileService\\Utility\\DriveInfoService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T03:47:56.227Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "IFileService.cs",
               "DocumentMoniker": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\IFileService.cs",
               "RelativeDocumentMoniker": "FileService\\IFileService.cs",
               "ToolTip": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\IFileService.cs",
               "RelativeToolTip": "FileService\\IFileService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA3AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T03:47:47.723Z",
+              "WhenOpened": "2024-07-09T03:25:34.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\Program.cs",
+              "RelativeDocumentMoniker": "FileService\\Program.cs",
+              "ToolTip": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\Program.cs",
+              "RelativeToolTip": "FileService\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T03:21:14.768Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "FileService.cs",
               "DocumentMoniker": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\FileService.cs",
               "RelativeDocumentMoniker": "FileService\\FileService.cs",
               "ToolTip": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\FileService.cs",
               "RelativeToolTip": "FileService\\FileService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T03:46:52.073Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T03:16:44.885Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "FilePathProvider.cs",
               "DocumentMoniker": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\FilePathProvider.cs",
               "RelativeDocumentMoniker": "FileService\\FilePathProvider.cs",
               "ToolTip": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\FilePathProvider.cs",
               "RelativeToolTip": "FileService\\FilePathProvider.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAHIAAAAmAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD8AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T03:46:48.913Z",
+              "WhenOpened": "2024-07-09T03:16:44.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FileServiceFactory.cs",
+              "DocumentMoniker": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\FileServiceFactory.cs",
+              "RelativeDocumentMoniker": "FileService\\FileServiceFactory.cs",
+              "ToolTip": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\FileServiceFactory.cs",
+              "RelativeToolTip": "FileService\\FileServiceFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T03:16:27.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IArchive.cs",
+              "DocumentMoniker": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\Archive\\IArchive.cs",
+              "RelativeDocumentMoniker": "FileService\\Archive\\IArchive.cs",
+              "ToolTip": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\Archive\\IArchive.cs",
+              "RelativeToolTip": "FileService\\Archive\\IArchive.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T03:14:44.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ArchiveService.cs",
+              "DocumentMoniker": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\Archive\\ArchiveService.cs",
+              "RelativeDocumentMoniker": "FileService\\Archive\\ArchiveService.cs",
+              "ToolTip": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\Archive\\ArchiveService.cs",
+              "RelativeToolTip": "FileService\\Archive\\ArchiveService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T03:14:43.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DriveInfoService.cs",
+              "DocumentMoniker": "C:\\Users\\arams\\source\\repos\\Common\\Common\\System\\DriveInfoService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\Common\\Common\\System\\DriveInfoService.cs",
+              "ToolTip": "C:\\Users\\arams\\source\\repos\\Common\\Common\\System\\DriveInfoService.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\Common\\Common\\System\\DriveInfoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T03:11:00.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EnumHelper.cs",
+              "DocumentMoniker": "C:\\Users\\arams\\source\\repos\\Common\\Common\\EnumUtil\\EnumHelper.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\Common\\Common\\EnumUtil\\EnumHelper.cs",
+              "ToolTip": "C:\\Users\\arams\\source\\repos\\Common\\Common\\EnumUtil\\EnumHelper.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\Common\\Common\\EnumUtil\\EnumHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T07:29:52.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Parameter.cs",
+              "DocumentMoniker": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\CommandLine\\Parameter.cs",
+              "RelativeDocumentMoniker": "FileService\\CommandLine\\Parameter.cs",
+              "ToolTip": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\CommandLine\\Parameter.cs",
+              "RelativeToolTip": "FileService\\CommandLine\\Parameter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T06:59:18.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ArgumentHandler.cs",
+              "DocumentMoniker": "C:\\Users\\arams\\source\\repos\\Common\\Common\\CommandLine\\ArgumentHandler.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\Common\\Common\\CommandLine\\ArgumentHandler.cs",
+              "ToolTip": "C:\\Users\\arams\\source\\repos\\Common\\Common\\CommandLine\\ArgumentHandler.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\Common\\Common\\CommandLine\\ArgumentHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T06:56:09.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CommandLineArgumentHandler.cs",
+              "DocumentMoniker": "C:\\Users\\arams\\source\\repos\\Common\\Common\\CommandLine\\CommandLineArgumentHandler.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\Common\\Common\\CommandLine\\CommandLineArgumentHandler.cs",
+              "ToolTip": "C:\\Users\\arams\\source\\repos\\Common\\Common\\CommandLine\\CommandLineArgumentHandler.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\Common\\Common\\CommandLine\\CommandLineArgumentHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T06:52:09.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FileService.csproj",
+              "DocumentMoniker": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\FileService.csproj",
+              "RelativeDocumentMoniker": "FileService\\FileService.csproj",
+              "ToolTip": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\FileService.csproj",
+              "RelativeToolTip": "FileService\\FileService.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-08T06:09:20.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FileService",
+              "DocumentMoniker": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\FileService.csproj",
+              "RelativeDocumentMoniker": "FileService\\FileService.csproj",
+              "ToolTip": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\FileService.csproj",
+              "RelativeToolTip": "FileService\\FileService.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-08T00:45:54.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CommandLineHandler.cs",
+              "DocumentMoniker": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\CommandLine\\CommandLineHandler.cs",
+              "RelativeDocumentMoniker": "FileService\\CommandLine\\CommandLineHandler.cs",
+              "ToolTip": "C:\\Users\\arams\\Documents\\GitHubRepos\\FileService\\FileService\\CommandLine\\CommandLineHandler.cs",
+              "RelativeToolTip": "FileService\\CommandLine\\CommandLineHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T00:27:31.793Z",
               "EditorCaption": ""
             }
           ]

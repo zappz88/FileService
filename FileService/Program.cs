@@ -1,12 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using Common.System;
 using FileService;
 using FileService.CommandLine;
-using FileService.Utility;
 
 Console.WriteLine("Executing FileService...");
 
-CommandLineArgumentHandler commandLineArgumentHandler = new CommandLineArgumentHandler(Environment.GetCommandLineArgs());
-string targetRootPathParam = commandLineArgumentHandler.GetDestinationRoot();
+CommandLineHandler commandLineArgumentHandler = new CommandLineHandler();
+string destinationRoot = commandLineArgumentHandler.GetDestinationRoot();
 List<FileOperationEnum> fileOperationEnums = commandLineArgumentHandler.GetFileOperations();
 
 DriveInfo[] removableDriveInfos = DriveInfoService.GetRemovableDrives();
@@ -18,7 +18,7 @@ foreach (DriveInfo removableDriveInfo in removableDriveInfos)
         Console.WriteLine($@"Executing file operation '{fileOperationEnum}' on '{removableDriveInfo.Name}'...");
         foreach (FileServiceEnum fileServiceEnum in Enum.GetValues<FileServiceEnum>())
         {
-            IFileService fileService = FileServiceFactory.GetFileService(fileServiceEnum, removableDriveInfo.Name, targetRootPathParam);
+            IFileService fileService = FileServiceFactory.GetFileService(fileServiceEnum, removableDriveInfo.Name, destinationRoot);
             switch (fileOperationEnum)
             {
                 case FileOperationEnum.Copy:
