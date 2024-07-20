@@ -22,7 +22,7 @@ namespace FileService.CommandLine
 
         public List<FileOperationEnum> GetFileOperations()
         {
-            List<string> ParameterParameters = GetParameterArgArray(Parameter.ActionParameter).ToList();
+            List<string> ParameterParameters = GetParameterArgArray(Parameter.CommandParameter).ToList();
             if (ParameterParameters.Count > 0) 
             {
                 List<FileOperationEnum> fileOperationEnumsList = new List<FileOperationEnum>();

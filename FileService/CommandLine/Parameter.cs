@@ -7,13 +7,16 @@
         //parent directory name
         public static string ParentRootParameter = "/p";
         //action commands
-        public static string ActionParameter = "/c";
+        public static string CommandParameter = "/c";
+        //contiguous action delimiter eg dest, move | dest copy
+        public static string CommandDelimiter = "|";
 
         public static List<string> ParameterList = new List<string>()
         {
             DestinationRootParameter,
             ParentRootParameter,
-            ActionParameter
+            CommandParameter,
+            CommandDelimiter
         };
     }
 }
