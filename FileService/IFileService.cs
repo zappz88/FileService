@@ -4,7 +4,7 @@
 
     public enum FileOperationEnum { Copy, Move, Delete, Archive }
 
-    public enum FileServiceEnum { Default }
+    public enum FileServiceEnum { Media }
 
     public interface IFileService
     {
@@ -37,26 +37,16 @@
         void DeleteAllMediaFiles();
     }
 
-    public interface IFilePathProvider
+    public interface IPathProvider
     {
-        string GetSourceMediaFilePath(FileTypeEnum fileTypeEnum);
+        string GetMediaPath(FileTypeEnum fileTypeEnum);
 
-        string GetSourceMediaFilePath(string fileTypeEnumString);
+        string GetMediaPath(string fileTypeEnumString);
 
-        string GetSourceVideoFilePath();
+        string GetVideoPath();
 
-        string GetSourceAudioFilePath();
+        string GetAudioPath();
 
-        string GetSourcePhotoFilePath();
-
-        string GetTargetMediaFilePath(FileTypeEnum fileTypeEnum);
-
-        string GetTargetMediaFilePath(string fileTypeEnumString);
-
-        string GetTargetVideoFilePath();
-
-        string GetTargetAudioFilePath();
-
-        string GetTargetPhotoFilePath();
+        string GetPhotoPath();
     }
 }

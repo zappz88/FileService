@@ -1,38 +1,55 @@
-﻿namespace FileService
+﻿namespace FileService.Services.Default
 {
 
-    public class FileService : IFileService
+    public class MediaFileService : IFileService
     {
         #region Properties
-        private FilePathProvider filePathProvider;
+        private SourcePathProvider sourcePathProvider;
+        private TargetPathProvider targetPathProvider;
         #endregion
 
         #region Constructors
-        public FileService()
+        public MediaFileService()
         {
 
         }
 
-        public FileService(string sourcePath, string targetPath)
+        public MediaFileService(string sourcePath, string targetPath)
         {
-            filePathProvider = new FilePathProvider(sourcePath, targetPath);
+            sourcePathProvider = new SourcePathProvider(sourcePath);
+            targetPathProvider = new TargetPathProvider(targetPath);
         }
         #endregion
 
         #region Public Methods
         public string[] GetVideoFiles()
         {
-            return Directory.GetFiles(filePathProvider.GetSourceVideoFilePath());
+            string path = sourcePathProvider.GetVideoPath();
+            if (Directory.Exists(path)) 
+            {
+                return Directory.GetFiles(path);
+            }
+            return null;
         }
 
         public string[] GetAudioFiles()
         {
-            return Directory.GetFiles(filePathProvider.GetSourceAudioFilePath());
+            string path = sourcePathProvider.GetAudioPath();
+            if (Directory.Exists(path))
+            {
+                return Directory.GetFiles(sourcePathProvider.GetAudioPath());
+            }
+            return null;
         }
 
         public string[] GetPhotoFiles()
         {
-            return Directory.GetFiles(filePathProvider.GetSourcePhotoFilePath());
+            string path = sourcePathProvider.GetPhotoPath();
+            if (Directory.Exists(path))
+            {
+                return Directory.GetFiles(sourcePathProvider.GetPhotoPath());
+            }
+            return null;
         }
 
         public string[] GetMediaFiles(FileTypeEnum fileTypeEnum)
@@ -66,9 +83,9 @@
             string[] mediaFiles = GetMediaFiles(fileTypeEnum);
             if (mediaFiles != null && mediaFiles.Length > 0)
             {
-                string destFullDirectoryPath = filePathProvider.GetTargetMediaFilePath(fileTypeEnum);
+                string destFullDirectoryPath = targetPathProvider.GetMediaPath(fileTypeEnum);
                 Directory.CreateDirectory(destFullDirectoryPath);
-                Console.WriteLine($@"Moving {mediaFiles.Length} files from '{filePathProvider.GetSourceMediaFilePath(fileTypeEnum)}' to {filePathProvider.GetTargetMediaFilePath(fileTypeEnum)}...");
+                Console.WriteLine($@"Moving {mediaFiles.Length} files from '{sourcePathProvider.GetMediaPath(fileTypeEnum)}' to {targetPathProvider.GetMediaPath(fileTypeEnum)}...");
                 Parallel.ForEach(mediaFiles, mediaFile =>
                 {
                     FileInfo fileInfo = new FileInfo(mediaFile);
@@ -78,9 +95,9 @@
                 });
                 Console.WriteLine($@"Moved files.");
             }
-            else 
+            else
             {
-                Console.WriteLine($@"{mediaFiles.Length} {fileTypeEnum} files found in '{filePathProvider.GetSourceMediaFilePath(fileTypeEnum)}'.");
+                Console.WriteLine($@"No {fileTypeEnum} files found in '{sourcePathProvider.GetMediaPath(fileTypeEnum)}'.");
             }
         }
 
@@ -100,9 +117,9 @@
             string[] mediaFiles = GetMediaFiles(fileTypeEnum);
             if (mediaFiles != null && mediaFiles.Length > 0)
             {
-                string destFullDirectoryPath = filePathProvider.GetTargetMediaFilePath(fileTypeEnum);
+                string destFullDirectoryPath = targetPathProvider.GetMediaPath(fileTypeEnum);
                 Directory.CreateDirectory(destFullDirectoryPath);
-                Console.WriteLine($@"Copying {mediaFiles.Length} files from '{filePathProvider.GetSourceMediaFilePath(fileTypeEnum)}' to {filePathProvider.GetTargetMediaFilePath(fileTypeEnum)}...");
+                Console.WriteLine($@"Copying {mediaFiles.Length} files from '{sourcePathProvider.GetMediaPath(fileTypeEnum)}' to {targetPathProvider.GetMediaPath(fileTypeEnum)}...");
                 Parallel.ForEach(mediaFiles, mediaFile =>
                 {
                     FileInfo fileInfo = new FileInfo(mediaFile);
@@ -114,7 +131,7 @@
             }
             else
             {
-                Console.WriteLine($@"{mediaFiles.Length} {fileTypeEnum} files found in '{filePathProvider.GetSourceMediaFilePath(fileTypeEnum)}'.");
+                Console.WriteLine($@"No {fileTypeEnum} files found in '{sourcePathProvider.GetMediaPath(fileTypeEnum)}'.");
             }
         }
 
@@ -134,7 +151,7 @@
             string[] mediaFiles = GetMediaFiles(fileTypeEnum);
             if (mediaFiles != null && mediaFiles.Length > 0)
             {
-                Console.WriteLine($@"Deleting {mediaFiles.Length} files from '{filePathProvider.GetSourceMediaFilePath(fileTypeEnum)}'...");
+                Console.WriteLine($@"Deleting {mediaFiles.Length} files from '{sourcePathProvider.GetMediaPath(fileTypeEnum)}'...");
                 Parallel.ForEach(mediaFiles, mediaFile =>
                 {
                     FileInfo fileInfo = new FileInfo(mediaFile);
@@ -146,7 +163,7 @@
             }
             else
             {
-                Console.WriteLine($@"{mediaFiles.Length} {fileTypeEnum} files found in '{filePathProvider.GetSourceMediaFilePath(fileTypeEnum)}'.");
+                Console.WriteLine($@"No {fileTypeEnum} files found in '{sourcePathProvider.GetMediaPath(fileTypeEnum)}'.");
             }
         }
 

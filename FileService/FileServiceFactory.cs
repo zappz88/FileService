@@ -1,4 +1,5 @@
 ﻿using Common.EnumUtil;
+using FileService.Services.Default;
 
 namespace FileService
 {
@@ -10,8 +11,8 @@ namespace FileService
 
             switch (fileServiceEnum)
             {
-                case FileServiceEnum.Default:
-                    fileService = new FileService();
+                case FileServiceEnum.Media:
+                    fileService = new MediaFileService();
                     break;
                 default:
                     throw new NotImplementedException();
@@ -32,8 +33,8 @@ namespace FileService
 
             switch (fileServiceEnum) 
             {
-                case FileServiceEnum.Default:
-                    fileService = new FileService(sourcePath, targetPath);
+                case FileServiceEnum.Media:
+                    fileService = new MediaFileService(sourcePath, targetPath);
                     break;
                 default:
                     throw new NotImplementedException();

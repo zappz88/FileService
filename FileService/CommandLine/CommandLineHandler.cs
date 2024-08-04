@@ -3,11 +3,16 @@ using Common.EnumUtil;
 
 namespace FileService.CommandLine
 {
-    public class CommandLineHandler : CommandLineArgumentHandler
+    public class CommandLineHandler : CommandLineArgumentHandlerBase
     {
         public CommandLineHandler() : base(Parameter.ParameterList)
         {
 
+        }
+
+        public string GetFileServiceParameter()
+        {
+            return GetParameterArg(Parameter.FileServiceParameter);
         }
 
         public string GetDestinationRoot()

@@ -15,7 +15,7 @@ namespace FileService.Archive
             ZipFile.CreateFromDirectory(directoryPath, zipPath, CompressionLevel.Optimal, false);
         }
 
-        public void UnArchiveDirectory(string zipPath, string directoryPath)
+        public void ExtractDirectory(string zipPath, string directoryPath)
         {
             ZipFile.ExtractToDirectory(zipPath, directoryPath, true);
         }

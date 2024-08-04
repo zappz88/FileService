@@ -10,6 +10,6 @@ namespace FileService.Archive
     {
         void ArchiveDirectory(string directoryPath, string zipPath);
 
-        void UnArchiveDirectory(string zipPath, string directoryPath);
+        void ExtractDirectory(string zipPath, string directoryPath);
     }
 }
