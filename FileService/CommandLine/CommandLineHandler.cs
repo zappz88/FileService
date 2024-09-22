@@ -10,9 +10,14 @@ namespace FileService.CommandLine
 
         }
 
-        public string GetFileServiceParameter()
+        public string GetFileServiceEnumString()
         {
             return GetParameterArg(Parameter.FileServiceParameter);
+        }
+
+        public FileServiceEnum GetFileServiceEnum()
+        {
+            return EnumHelper.TryParse<FileServiceEnum>(GetParameterArg(Parameter.FileServiceParameter));
         }
 
         public string GetDestinationRoot()
